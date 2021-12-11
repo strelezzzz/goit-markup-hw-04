@@ -434,3 +434,28 @@ a.active-page {
 .team h3 {
   font-weight: 500;
 }
+/* ================ icons ============== */
+.icon-envelope,
+.icon-smartphone {
+  display: inline-block;
+  margin-right: 10px;
+  fill: var(--secondary-text);
+  align-items: center;
+}
+.icon-envelope:hover,
+.icon-smartphone:hover {
+  fill: var(--color-active);
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+}
+
+.about-icon {
+  width: 270px;
+  height: 120px;
+  background-color: var(--bacground-button);
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
