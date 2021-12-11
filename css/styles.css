@@ -362,7 +362,7 @@ a.active-page {
 
 .buttons:hover,
 .buttons:focus {
-  background-color: var(--color-active);
+  background-color: #188ce8;
   color: var(--background);
 }
 
@@ -389,7 +389,14 @@ a.active-page {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../images/hero-img.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-img.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .hero h1 {
