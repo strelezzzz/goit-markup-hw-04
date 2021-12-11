@@ -8,6 +8,7 @@
   --background-footer: #2f303a;
   --footer-contacts: rgba(255, 255, 255, 0.6);
   --background-hero: #c4c4c4;
+  --social-color: #afb1b8;
 }
 /* ======= main styles ======== */
 body {
@@ -203,7 +204,7 @@ ul.contacts-list {
 }
 
 .team p {
-  padding-bottom: 30px;
+  padding-bottom: 16px;
 }
 
 .team-cards {
@@ -458,4 +459,36 @@ a.active-page {
   background-color: var(--bacground-button);
   padding: 25px 100px;
   margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.social-links {
+  display: flex;
+  padding-bottom: 30px;
+  margin-right: 32px;
+  margin-left: 32px;
+  justify-content: center;
+}
+
+.social-link {
+  fill: var(--social-color);
+}
+
+.social-link:hover {
+  fill: var(--background);
+  background-color: var(--color-active);
+  border-radius: 50%;
+  border: 1px solid transparent;
+}
+
+.social-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
 }
