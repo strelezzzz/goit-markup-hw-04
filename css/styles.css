@@ -311,7 +311,10 @@ a.active-page {
 }
 
 .social {
-  padding-left: 70px;
+  margin-left: 70px;
+  margin-top: 72px;
+  margin-bottom: 100px;
+  /* outline: #afb1b8 solid 2px; */
 }
 .social .social-item {
   padding-right: 0;
@@ -319,9 +322,26 @@ a.active-page {
 }
 
 .social h3 {
-  text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   color: var(--background);
+}
+
+.footer .social-links {
+  margin-right: 0;
+  margin-left: 0;
+  padding: 0;
+}
+
+.footer .social-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  fill: var(--background);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  padding-bottom: 0;
 }
 
 /* ========== Filters ======================= */
@@ -389,6 +409,7 @@ a.active-page {
 
 .about h3,
 .social h3 {
+  display: block;
   font-weight: bold;
   line-height: 1.14;
   text-transform: uppercase;
@@ -461,8 +482,8 @@ a.active-page {
   fill: var(--secondary-text);
   align-items: center;
 }
-.icon-envelope:hover,
-.icon-smartphone:hover {
+.contacts:hover .icon-envelope,
+.contacts:hover .icon-smartphone {
   fill: var(--color-active);
 }
 
