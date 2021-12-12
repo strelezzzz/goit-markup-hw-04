@@ -164,10 +164,6 @@ ul.contacts-list {
 
 /* ========== what-we-do Flex========= */
 
-.what-we-do .title {
-  margin-bottom: 50px;
-}
-
 .what-we-do-list {
   display: flex;
   margin-bottom: 94px;
@@ -179,9 +175,15 @@ ul.contacts-list {
 
 /* ========= team  Flex=========== */
 
+.what-we-do .title,
+.clients .title,
 .team .title {
-  padding-bottom: 41px;
-  padding-top: 103px;
+  padding-bottom: 50px;
+  padding-top: 94px;
+}
+
+.what-we-do .title {
+  padding-top: 85px;
 }
 
 .team-list {
@@ -418,7 +420,8 @@ a.active-page {
 }
 
 .what-we-do .title,
-.team .title {
+.team .title,
+.clients .title {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
@@ -462,6 +465,8 @@ a.active-page {
   border-radius: 4px;
 }
 
+/* ================ social-links ============== */
+
 .social-links {
   display: flex;
   padding-bottom: 30px;
@@ -470,11 +475,8 @@ a.active-page {
   justify-content: center;
 }
 
-.social-link {
-  fill: var(--social-color);
-}
-
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
   fill: var(--background);
   background-color: var(--color-active);
   border-radius: 50%;
@@ -487,8 +489,33 @@ a.active-page {
   height: 44px;
   justify-content: center;
   align-items: center;
+  fill: var(--social-color);
 }
 
 .social-item:not(:last-child) {
   margin-right: 10px;
+}
+/* ============== clients =========== */
+.clients-list {
+  display: flex;
+  padding-bottom: 94px;
+}
+.client-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: var(--social-color);
+}
+
+.client-link:hover,
+.client-link:focus {
+  fill: var(--color-active);
+}
+
+.client-item:not(:last-child) {
+  margin-right: 30px;
 }
